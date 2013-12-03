@@ -564,7 +564,6 @@ void* client_thread(void* arg) //Handle ATM connections
 
 		if (string(pt).find("login") != string::npos) {
 			first = true;
-			printf("\n\nFound login in packet\n\n");
 		}
 
 		
