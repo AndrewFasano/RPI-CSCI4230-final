@@ -38,6 +38,11 @@ int main(int argc, char * argv[]){
 
 	fwrite(card_key, 1, AES_KEY_LENGTH, card);
 
+	for(int i=0;i < AES_KEY_LENGTH; i++)
+		printf("0x%d,",card_key[i]);
+
+	printf("\n");
+
 	fclose(card);
 
 }
