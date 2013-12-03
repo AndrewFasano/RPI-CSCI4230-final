@@ -168,7 +168,7 @@ bool init_atm_key(){
 	CryptoPP::SecByteBlock atm_private_key_DEBUG; //private key for ATM use during login
 
 	//ATM key
-	unsigned char card_contents[AES_KEY_LENGTH] = {41, 6, 2, 204, 243, 119, 152, 126, 92, 116, 84, 234, 189, 233, 54, 94, 157, 57, 104, 123, 182, 127, 4, 208, 20, 149, 82, 196, 168, 135, 83, 233};
+	unsigned char card_contents[AES_KEY_LENGTH] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }
 
 	atm_private_key.Assign((const byte *)card_contents, AES_KEY_LENGTH);
 

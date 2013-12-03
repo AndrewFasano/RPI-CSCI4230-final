@@ -291,7 +291,7 @@ void init_bank( user_type* users ){ //Create Alice, Bob and Eve user accounts
 	CryptoPP::SecByteBlock empty_session( 0x00, AES_KEY_LENGTH );
 	
 	// atm key
-	unsigned char atm_key[AES_KEY_LENGTH] = {41, 6, 2, 204, 243, 119, 152, 126, 92, 116, 84, 234, 189, 233, 54, 94, 157, 57, 104, 123, 182, 127, 4, 208, 20, 149, 82, 196, 168, 135, 83, 233};
+	unsigned char atm_key[AES_KEY_LENGTH] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}
 	atm_private_key.Assign((const byte *)atm_key, AES_KEY_LENGTH);
 	
 	char card_contents[AES_KEY_LENGTH];
